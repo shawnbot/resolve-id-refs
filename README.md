@@ -14,10 +14,7 @@ resolve('foo bar');
 // ]
 ```
 
-See [the tests](test/) for more info.
-
 ## API
-
 ```
 resolve(ids<String> [, document<Document|DocumentFragment>]) => Array<Element>
 ```
@@ -27,7 +24,25 @@ resolve(ids<String> [, document<Document|DocumentFragment>]) => Array<Element>
   [DocumentFragment] instance. Because `DocumentFragment` does not provide a
   `getElementById()` method, we use `querySelector('[id="' + id + '"]')`.
 
+## Installation
+This is a Node module intended for use with browser bundling tools, such as
+[browserify] and [webpack]. To install it in your project, run:
+
+```
+npm install --save resolve-id-refs
+```
+
+Then, require it in your bundle:
+
+```js
+var resolve = require('resolve-id-refs');
+```
+
+See [the tests](test/spec.js) for more examples of usage.
+
 [ID reference list]: https://www.w3.org/TR/2010/WD-html-markup-20100624/datatypes.html#common.data.idrefs-def
 [space-separated tokens]: https://www.w3.org/TR/2010/WD-html5-20100624/common-microsyntaxes.html#space-separated-tokens
 [Document]: https://developer.mozilla.org/en-US/docs/Web/API/Document
 [DocumentFragment]: https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment
+[browserify]: http://browserify.org/
+[webpack]: https://webpack.github.io/
