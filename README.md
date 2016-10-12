@@ -3,7 +3,7 @@ This module exports a function that resolves a HTML [ID reference list] into an
 array of elements. An ID reference list is a string in which one or more ids is
 separated by whitespace (spaces, tabs, or line breaks). Whitespace at the
 beginning and end of the string is trimmed, and any ID that is not found in the
-document raises an error.
+document raises an error. See [the tests](test/) for more info.
 
 ```js
 var resolve = require('resolve-id-refs');
