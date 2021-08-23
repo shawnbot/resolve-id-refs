@@ -7,6 +7,10 @@
     "lint": "eslint *.js test",
     "test": "mocha -r jsdom-global/register"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shawnbot/resolve-id-refs.git"
+  },
   "keywords": [],
   "author": "Shawn Allen (https://github.com/shawnbot)",
   "license": "CC0-1.0",
